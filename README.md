@@ -2,10 +2,14 @@
 Implementação do EPL na linguagem C#.
 
 Pode ser compilado usando o compilador MonoC#, através do comando (Linux):
-`mcs -out:tests src/*.cs src/*/*.cs [-d:features ... ]`
+```
+mcs -out:tests src/*.cs src/*/*.cs [-d:features ... ]
+```
 
 Ou do compilador VisualC# (Windows) atráves do comando:
-`csc /out:test.exe src\*.cs src\classes\*cs src\interfaces\*.cs src\Tests\*.cs src\eval\*.cs [/d:features ...]`
+```
+csc /out:test.exe src\*.cs src\classes\*cs src\interfaces\*.cs src\Tests\*.cs src\eval\*.cs [/d:features ...]
+```
 
 Onde features podem ser:
 * FEATURE_ADD (inclui a feature ADD)
@@ -15,9 +19,13 @@ Onde features podem ser:
 
 Exemplo, para compilar e executar os testes de unidade para as features SUB e EVAL:
 **(Linux)**
-`$ mcs -out:tests src/*.cs src/*/*.cs -d:FEATURE_SUB -d:FEATURE_EVAL
-$ ./tests`
+```
+$ mcs -out:tests src/*.cs src/*/*.cs -d:FEATURE_SUB -d:FEATURE_EVAL
+$ ./tests
+```
 
 **(Windows)**
-`> csc /out:tests.exe src\*.cs src\classes\*cs src\interfaces\*.cs src\Tests\*.cs src\eval\*.cs /d:FEATURE_SUB /d:FEATURE_EVAL
-> tests`
+```
+> csc /out:tests.exe src\*.cs src\classes\*cs src\interfaces\*.cs src\Tests\*.cs src\eval\*.cs /d:FEATURE_SUB /d:FEATURE_EVAL
+> tests
+```
