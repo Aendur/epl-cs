@@ -16,7 +16,7 @@ namespace epl_cs
         {
             get
             {
-                return "( " + lhs.Print + " - " + rhs.Print + " )";
+                return "(" + lhs.Print + " - " + rhs.Print + ")";
             }
         }
     }

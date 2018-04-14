@@ -16,6 +16,7 @@ Onde features podem ser:
 * FEATURE_SUB (inclui a feature SUB)
 * FEATURE_MUL (inclui a feature MUL)
 * FEATURE_EVAL (inclui a feature EVAL)
+* FEATURE_HEIGHT (inclui a feature HEIGHT)
 
 Exemplo, para compilar e executar os testes de unidade para as features SUB e EVAL:
 
@@ -27,6 +28,6 @@ $ ./tests
 
 **(Windows)**
 ```
-> csc /out:tests.exe src\*.cs src\classes\*cs src\interfaces\*.cs src\Tests\*.cs src\eval\*.cs /d:FEATURE_SUB /d:FEATURE_EVAL
+> csc /out:tests.exe src\*.cs src\classes\*cs src\interfaces\*.cs src\Tests\*.cs src\eval\*.cs src\height\*.cs /d:FEATURE_SUB /d:FEATURE_EVAL
 > tests
 ```
